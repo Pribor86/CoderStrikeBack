@@ -87,7 +87,7 @@ class Player
             
             if(nextCheckpointAngle < 90)
             {
-                double perfectForce = nextCheckpointDist * Math.Cos(rad) * 0.15;
+                double perfectForce = nextCheckpointDist * Math.Cos(rad) * 0.15 - 20;
                 if(perfectForce > 100)
                 {
                     force = 100;
